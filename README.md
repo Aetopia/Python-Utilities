@@ -6,7 +6,7 @@ This is a simple Python scripts which allows you run a full python installation 
 You can use the pre-compiled executable or build it yourself.    
 
 You can also import custom modules installed via `pip` and include them in your LPE.
-```
+```py
 #------------
 import module1
 import module2
@@ -25,7 +25,7 @@ except:
 #### Requirements to Build:
 1. Install Python `3.9`.
 2. Run:
-```
+```ps
 pip install nuitka
 pip install zstandard
 ```
