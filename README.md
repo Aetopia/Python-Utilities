@@ -2,8 +2,7 @@
 A GitHub Repository where I store any Python Utilities I make.
 
 ## Lightweight Python Environment
-This is a simple Python script which allows you to run a full python installation but as a small package.      
-You can use the pre-compiled executable or build it yourself.    
+This is a simple Python script which allows you to run a full python installation but as a small package.       
 
 You can also import custom modules installed via `pip` and include them in your LPE.
 ```py
