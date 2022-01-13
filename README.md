@@ -30,5 +30,5 @@ pip install zstandard
 ```
 3. Run `build.bat`
 
-**Note: Your compiled LPE will include the python installation present on your device.**
+**Note: Your compiled LPE will include the Python installation present on your device.**
 
