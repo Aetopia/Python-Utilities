@@ -8,7 +8,7 @@ TUI Explorer allows one to access their operating's file system via a shell.
 
 ![image](https://user-images.githubusercontent.com/41850963/154333672-3d68f169-e12a-4c13-80d9-e8ec0d2846d0.png)
 
-Toolbar Commands:
+## Toolbar Commands:
 ```
 Go <Folder> # Go to specified folder.
 Back # Go one folder up.
