@@ -10,7 +10,7 @@ for Index in range(len(Arguments)):
     Args[Index]=Arguments[Index]
 if len(sys.argv) == 1: 
     code.InteractiveConsole().interact(banner=
-    "Lightweight Python Environment: Python 3.9.9\n", 
+    "Lightweight Python Environment\n", 
     exitmsg="")
 elif len(sys.argv) == 2:
     runpy.run_path(sys.argv[1])
