@@ -43,7 +43,6 @@ def Explorer():
 def Toolbar():
     Command = input("Toolbar > ").split(' ',1)
     match Command[0].lower():
-        case 'back': chdir(path.abspath(path.dirname(getcwd())))
         case 'go':
             Folder = None
             try:
@@ -54,7 +53,8 @@ def Toolbar():
                 if Folder is None: Folder = Command[1]
             except: pass
             try: chdir(path.abspath(Folder))
-            except: pass 
+            except: pass
+        case 'back': chdir(path.abspath(path.dirname(getcwd())))
         case 'run': 
             try: run(Command[1],shell=True)
             except: pass
@@ -71,4 +71,4 @@ if __name__ == '__main__':
         Explorer()
         try:Toolbar()
         except KeyboardInterrupt as Error:
-            if str(Error) == "<class 'KeyboardInterrupt'>": pass
+            if str(Error) == "<class 'KeyboardInterrupt'>": pass     
