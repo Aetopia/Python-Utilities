@@ -30,12 +30,10 @@ def Explorer():
                 for _ in range(Length):
                     Whitespaces+=" "
                 Output=f"{Icon} {Item}{Whitespaces} | {Type}"
-            else:   
-                Output=f"{Icon} {Item}"
+            else: Output=f"{Icon} {Item}"
             Whitespaces=''
             print(Output)
-    else:
-        print('~ |Empty Directory|')           
+    else: print('~ |Empty Directory|')           
     UI.Line('‾')    
     print(f'Path: {getcwd()}')
     print(""" ________________________        
@@ -55,8 +53,7 @@ def Toolbar():
                         Folder = Folder
                         break
                 if Folder is None: Folder = Command[1]
-            except:
-                pass
+            except: pass
             try: chdir(path.abspath(Folder))
             except: pass 
         case 'run': 
@@ -66,8 +63,7 @@ def Toolbar():
             try: system('cls')
             except: system('clear') 
             exit()
-
-        
+     
 # Main
 if __name__ == '__main__':
     while True:
@@ -76,5 +72,4 @@ if __name__ == '__main__':
         Explorer()
         try:Toolbar()
         except KeyboardInterrupt as Error:
-            if str(Error) == "<class 'KeyboardInterrupt'>":
-                pass     
+            if str(Error) == "<class 'KeyboardInterrupt'>": pass
