@@ -26,8 +26,7 @@ def Explorer():
             if len(Item) > 50: Item=f'{Item[:50]}...'
             elif len(Item) < 50:
                 Length=53-len(Item)
-                for _ in range(Length):
-                    Whitespaces+=" "
+                for _ in range(Length): Whitespaces+=" "
                 Output=f"{Icon} {Item}{Whitespaces} | {Type}"
             else: Output=f"{Icon} {Item}"
             Whitespaces=''
