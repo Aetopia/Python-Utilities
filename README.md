@@ -1,6 +1,22 @@
 # Python Utilities
 A GitHub Repository where I store any Python Utilities I make.
 
+## TUI Explorer
+A Text User Interface Based File Explorer.
+
+TUI Explorer allows one to access their operating's file system via a shell.
+
+![image](https://user-images.githubusercontent.com/41850963/154333672-3d68f169-e12a-4c13-80d9-e8ec0d2846d0.png)
+
+Toolbar Commands:
+```
+Go <Folder> # Go to specified folder.
+Back # Go one folder up.
+Run <Arguments> # Run a program/shell command.
+Exit # Exit TUI Explorer.
+```
+
+
 ## Lightweight Python Environment
 This is a simple Python script which allows you to run a full python installation but as a small package.       
 
@@ -22,7 +38,7 @@ for Index in range(len(Arguments)):
     Args[Index]=Arguments[Index]
 if len(sys.argv) == 1: 
     code.InteractiveConsole().interact(banner=
-    "Lightweight Python Environment: Python 3.9.9\n", 
+    "Lightweight Python Environment\n", 
     exitmsg="")
 elif len(sys.argv) == 2:
     runpy.run_path(sys.argv[1])
@@ -33,7 +49,7 @@ else:
 ```    
 
 #### Requirements to Build:
-1. Install Python `3.9`.
+1. Install Python `3.10`.
 2. Run:
 ```ps
 pip install nuitka
