@@ -7,7 +7,7 @@ from fnmatch import filter
 # UI 
 class UI:
     def Line(Character):
-        for _ in range(100): print(Character,end='')
+        for _ in range(100): print(Character, end='')
         print()                   
 
 # Explorer
