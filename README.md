@@ -6,11 +6,11 @@ A Text User Interface Based File Explorer.
 
 TUI Explorer allows one to access their operating's system file system via a shell.
 
-![image](https://user-images.githubusercontent.com/41850963/154413634-cb3e855d-f2ce-450e-b2d4-ad1ecc9810f7.png)
+![image](https://user-images.githubusercontent.com/41850963/154413904-bc885f1c-8f94-4973-9e6b-08373bdffa29.png)
 
 
 
-### Toolbar Commands:
+### Commands:
 ```
 Go <Folder> # Go to specified folder.
 Back # Go one folder up.
