@@ -34,9 +34,9 @@ def Explorer():
     else: print('~ |Empty Directory|')           
     UI.Line('‾')    
     print(f'Path: {getcwd()}')
-    print(""" ________________________        
-| Go | Back | Run | Exit |
- ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾""")
+    print(""" _________________        
+| Go | Back | Run |
+ ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾""")
 
 # Toolbar
 def Command():
@@ -57,10 +57,6 @@ def Command():
         case 'run': 
             try: run(Command[1],shell=True)
             except: pass
-        case 'exit':
-            try: system('cls')
-            except: system('clear') 
-            exit()
      
 # Main
 if __name__ == '__main__':
@@ -69,5 +65,4 @@ if __name__ == '__main__':
         except: system('clear')    
         Explorer()
         try: Command()
-        except KeyboardInterrupt as Error:
-            if str(Error) == "<class 'KeyboardInterrupt'>": pass
+        except: exit()
