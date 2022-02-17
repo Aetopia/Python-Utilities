@@ -18,7 +18,7 @@ def Explorer():
         for Item in glob("*"):
             Whitespaces=''
             if path.isfile(path.abspath(Item)): 
-                Type=f'{path.splitext(Item)[1].title()} File'.strip()
+                Type=f'{path.splitext(Item)[1]} File'.strip()
                 Icon = '#'
             elif path.isdir(path.abspath(Item)):
                 Type='File Folder'  
