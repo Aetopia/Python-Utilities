@@ -18,7 +18,7 @@ def Explorer():
         for Item in glob("*"):
             Whitespaces=''
             if path.isfile(path.abspath(Item)): 
-                Type=f'{path.splitext(Item)[1].title()} File'
+                Type=f'{path.splitext(Item)[1].title()} File'.strip()
                 Icon = '#'
             elif path.isdir(path.abspath(Item)):
                 Type='File Folder'  
@@ -39,8 +39,8 @@ def Explorer():
  ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾""")
 
 # Toolbar
-def Toolbar():
-    Command = input("Toolbar > ").split(' ',1)
+def Command():
+    Command = input("Command > ").split(' ',1)
     match Command[0].lower():
         case 'go':
             Folder = None
