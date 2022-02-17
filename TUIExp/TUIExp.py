@@ -40,7 +40,7 @@ def Explorer():
 
 # Toolbar
 def Command():
-    Command = input("Command > ").split(' ',1)
+    Command = input("Command > ").strip().split(' ',1)
     match Command[0].lower():
         case 'go':
             Folder = None
