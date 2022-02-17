@@ -68,6 +68,6 @@ if __name__ == '__main__':
         try: system('cls')
         except: system('clear')    
         Explorer()
-        try:Toolbar()
+        try: Command()
         except KeyboardInterrupt as Error:
             if str(Error) == "<class 'KeyboardInterrupt'>": pass     
