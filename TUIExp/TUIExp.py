@@ -70,4 +70,4 @@ if __name__ == '__main__':
         Explorer()
         try: Command()
         except KeyboardInterrupt as Error:
-            if str(Error) == "<class 'KeyboardInterrupt'>": pass     
+            if str(Error) == "<class 'KeyboardInterrupt'>": pass
